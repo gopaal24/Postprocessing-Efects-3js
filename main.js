@@ -202,9 +202,6 @@ const Dof = new BokehPass(scene, camera, {
   width: window.innerWidth,
   height: window.innerHeight,
 });
-Dof.materialBokeh.blending = 
-// Dof.materialBokeh.blendEquation = THREE.AddEquation
-console.log(Dof.materialBokeh.blending)
 // Dof.renderToScreen = true;
 Dof.enabled = false;
 composer.addPass(Dof);
@@ -229,9 +226,6 @@ const bloomPass = new UnrealBloomPass(
   1,
   0.85
 );
-// bloomPass.blendMaterial.blending = THREE.CustomBlending;
-bloomPass.blendMaterial.blendEquation = THREE.NoBlending
-console.log(bloomPass.blendMaterial.blendEquation)
 bloomPass.enabled = false; 
 bloomPass.threshold = 0.3;
 bloomPass.strength = 0.6;
